@@ -12,7 +12,7 @@ Script to scrape Facebook group members and export them into a CSV file. This Fa
  1. Once done, click on the "Download X members" button to download the generated CSV file
  1. The profiles are kept in a cache until you click the "Reset" button. Thanks to this cache, the extracted profiles are still available if your browser "crashes"
 
- Read our step-by-step [guide to extract Facebook group members and find their LinkedIn profile](https://www.datablist.com/how-to/scrape-facebook-group-members-linkedin)
+ Read our step-by-step [guide to extract Facebook group members and find their LinkedIn profile](https://fbgroupextractor.com/)
 
 > [dist/main.min.js](dist/main.min.js)
 
@@ -77,32 +77,19 @@ Once finished, or to perform "export checkpoints", click the button "Download X 
 
 **Edit and view your CSV file**
 
-[To load and view the CSV file](https://www.datablist.com/csv-editor), use [Datablist.com](https://www.datablist.com/) or any spreadsheet tools.
+[To load and view the CSV file](https://fbgroupextractor.com/), use [Facebook Groups Scraper](https://fbgroupextractor.com/) or any spreadsheet tools.
 
 
 **Manage your Facebook leads and enrich them with LinkedIn Profile**
 
 Use Facebook members profiles to build a leads database. Filter and segment leads to find the most relevant leads to contact. Then, enrich Facebook members with LinkedIn profile and email address.
-Follow this step-by-step tutorial to [scrape Facebook members and find their LinkedIn profiles](https://www.datablist.com/how-to/scrape-facebook-group-members-linkedin).
+Follow this step-by-step tutorial to [Facebook Groups Scraper](https://fbgroupextractor.com/).
 
 **Find the email address for Facebook Group members**
 
 To be clear: **there is no direct way to get the email address from Facebook.**
-But we can use the name, the company name, or the LinkedIn Profile URL to find an email address! Read our [guide to scrape Facebook Group Members and find their email address](https://www.datablist.com/how-to/scrape-facebook-group-members-linkedin#step-4-find-email-addresses-for-facebook-group-members).
+But we can use the name, the company name, or the LinkedIn Profile URL to find an email address! Read our guide to scrape Facebook Group Members and find their email address
 
-
-## FAQ
-
-- **How to remove the "Download" button?**
-    - Just reload your Facebook page. Any javascript code added in Chrome Developer Console will be removed.
-- **How many members can be extracted for one group?**
-    - Facebook loads a maximum of 10k profiles in the "People" tab. We recommend extracting new members on a regular basis. And then, [consolidate all your Facebook profiles in a single list using Datablist.com](https://www.datablist.com/how-to/scrape-facebook-group-members-linkedin).
-- **Can I extract members from different groups at one time?**
-    - Yes. The exported CSV contains a "Group Id" attribute. Load members from one Facebook group, go to another group page (without reloading your page), load members, and click "Download". Members extracted from both groups will be in a single CSV file with different "Group Id" values.
-- **What is the "Reset" button?**
-    - The profiles are stored in a cache in your browser. The cache is kept if your browser restarts the page (intentionally or after a crash). When you copy/paste the script, it loads the previous profiles from the cache. The "Reset" button clears the cache.
-- **Is it free?**
-    - The script is free and open-source. You can also clean and parse the data to get only members with a Company name with a free account on [Datablist](https://www.datablist.com). To perform a [LinkedIn Profile lookup](https://www.datablist.com/enrichments/linkedin-finder-from-name) or to [find an email address](https://www.datablist.com/enrichments/email-finder) you have to subscribe to a paid account on [Datablist](https://www.datablist.com). Those enrichments rely on external APIs. 
 
 ## How to build it locally
 
@@ -113,8 +100,3 @@ yarn build
 
 
 The generated script is located in `dist/main.min.js`.
-
-## Other scrapers
-
-- [Scrape Instagram followers, following users, post authors](https://github.com/floriandiud/instagram-users-scraper). And the tutorial to use the [Instagram Scraper](https://www.datablist.com/how-to/scrape-instagram-users-free-followers-followings-authors).
-- [Scrape WhatsApp Group Members](https://github.com/floriandiud/whatsapp-group-members-scraper)
